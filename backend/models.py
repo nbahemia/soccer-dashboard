@@ -63,7 +63,7 @@ class Player(db.Model):
     # Player information
     name = db.Column(db.String(100), nullable=False)
     nationality = db.Column(db.String(100), nullable=False)
-    date_of_birth = db.Column(db.Integer, nullable=False)
+    birth_year = db.Column(db.Integer, nullable=False)
     
     # Positional Information
     raw_position = db.Column(db.String(100), nullable=False)
@@ -114,7 +114,6 @@ class Stats(db.Model):
     goals_per_90 = db.Column(db.Float, nullable=False)
     assists_per_90 = db.Column(db.Float, nullable=False)
     goals_plus_assists_per_90 = db.Column(db.Float, nullable=False)
-    non_penalty_goals_per_90 = db.Column(db.Float, nullable=False)
     non_penalty_goals_per_90 = db.Column(db.Float, nullable=False)
     non_penalty_goals_plus_assists_per_90 = db.Column(db.Float, nullable=False)
 
